@@ -1,7 +1,7 @@
 const http = require("http");
 const openAI = require("openai");
 
-//opeAi methods - SEE DOCUMENTATION
+//openAI setup - SEE DOCUMENTATION https://platform.openai.com/docs/introduction
 const openAIAPI = new openAI.OpenAIApi(
   new openAI.Configuration({
     apiKey: process.env.API_KEY,
@@ -17,3 +17,4 @@ const server = http.createServer((req, res) => {
 server.listen(process.env.PORT, () => {
   console.log("Server is running on PORT 3000");
 });
+
